@@ -1,0 +1,306 @@
+/* common utilites  */
+main
+{
+    display:flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* header */
+header{
+    background-color: #2d25a0;
+    width:100%;
+    
+}
+.background
+{
+
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ margin-bottom:70px;
+}
+.header-text 
+{
+    margin-left:100px;
+    width:300px;
+    margin-bottom:100px;
+    color:white;
+    margin-top:100px
+    
+}
+.header-text button{
+    background-color:#E02C6D;
+    color:white;
+    border: none;
+    height:40px; 
+    width:170px;
+}
+.header-text h5{
+    font-size:40px;
+    margin-top:0px;
+    margin-bottom:0px;
+    
+
+    
+}
+.background-image
+{
+    width:300px;
+    align-items: center;
+    margin-top:100px;
+    transition:0.5s;
+    
+}
+.background-image img{
+    width:100%;
+    
+}
+.background:hover .background-image{
+    transform:scale(1.2) rotate(360deg);
+    
+}
+/* Best player profile section */
+
+
+.profile{
+    width: 330px;
+    margin-bottom:27px;
+    margin-left:30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+}
+
+.profile img
+{
+    width:300px;
+    padding:15px;
+   
+}
+.profile h3{
+    padding-left: 20px;
+    color:#18191F;
+
+}
+.profile p{
+    padding-left: -20px;
+    font-size: 16px;
+    color:#6C6C6C;
+    padding-left:15px;
+}
+.individual-player-profile
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 70px;
+}
+
+/* highlites of copa America */
+.highlites
+{
+    width:470px;
+    padding-left: 40px;
+    margin-bottom:10px;
+   
+}
+
+
+.highlites h1{
+    color:#0A0826;
+    font-weight: bold;
+    font-size:48px;
+    
+}
+.highlites p{
+    color:#6C6C6C;
+}
+
+.highlites button
+{
+    margin-left:40px; 
+    height:40px; 
+    width:170px;
+    background-color:#E02C6D;
+    color:white;
+    border: none;
+}
+
+.image
+{
+    width:510px;
+    
+}
+.image img
+{
+    width:100%;
+    padding-left: 30px;
+}
+.copa-America
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* fixture */
+
+
+.fixture
+{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px 20px;
+
+}
+.grid-box-top{
+    border:2px solid  gray;
+    font-size:1.5em;
+    width:300px;
+    color:white;
+    background-color: #2d25a0;
+    
+   
+}
+
+.grid-box{
+    border:2px solid  gray;
+    font-size:1.5em;
+    width:300px;
+    background-color: #3dbafd;
+    color:white;
+    
+   
+}
+.top-fixture
+{
+    margin-left:70px;
+}
+/* fixture end */
+
+
+
+
+/* .highlites */
+.team-highlites
+{
+    width:330px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-left:30px;
+    
+}
+.main-high
+{
+   
+    margin-top:100px;
+}
+.main-high h1
+{
+    color:#2d25a0;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.highlites-video
+{
+    
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* footer part */
+.football
+{
+    margin-top:200px;
+}
+.football-logo
+{
+    width:280px;
+}
+.football-logo img
+{
+    width:90%;
+}
+.icon{
+    margin-left:60px;
+}
+.icon i
+{
+    padding-left:20px;
+    background-color: #969BAB;
+    border-radius: 10px;
+    align-items: center;
+    padding-right: 15px;
+   
+
+}
+.copyright
+{
+    margin-left:60px;
+}
+
+
+/* media query */
+@media only screen and (max-width:688px){
+    .container{
+        width:100%;
+    }
+    .background{ 
+         grid-template-columns: repeat(1, 1fr);
+        }
+        .background{
+            width:100%;
+        }
+        .individual-player-profile
+        {
+            grid-template-columns: repeat(1, 1fr);  
+        }
+        .copa-America
+        {
+            grid-template-columns: repeat(1, 1fr);  
+        }
+        .highlites-video
+        {
+            grid-template-columns: repeat(1, 1fr);   
+        }
+        .fixture{
+            grid-template-columns: repeat(1, 1fr); 
+        }
+        .fixture{
+            margin:10%;
+        }
+        .image img
+        {
+           width:300px;
+           height:300px;
+          
+
+        }
+      
+    
+}
+@media only screen and (min-width: 689px) and (max-width:990px) 
+{
+    .container{
+        width:100%;
+    }
+    .background{ 
+         grid-template-columns: repeat(2, 2fr);
+        }
+        .individual-player-profile
+        {
+            grid-template-columns: repeat(2, 2fr);  
+        }
+        .copa-America
+        {
+            grid-template-columns: repeat(1, 2fr);  
+        }
+        .highlites-video
+        {
+            grid-template-columns: repeat(2, 2fr);   
+        }
+        .fixture{
+            grid-template-columns: repeat(2, 1fr); 
+        }
+      
+}
+
+
